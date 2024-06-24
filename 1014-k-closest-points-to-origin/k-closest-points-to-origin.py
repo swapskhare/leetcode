@@ -5,7 +5,6 @@ class Solution:
         ans = []
         for x,y in points:
             heapq.heappush(heap,(x**2+y**2,(x,y)))
-            print(x**2+y**2)
             
         for _ in range(k):
             ans.append(heapq.heappop(heap)[1])
