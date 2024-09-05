@@ -6,8 +6,6 @@ class Solution:
 
         while left <= right:
             ans = max (ans, abs((right-left)*min(height[left],height[right]))) 
-            print(ans)
-            print(left,right)
             if height[left] < height[right]:
                 left += 1
             else:
