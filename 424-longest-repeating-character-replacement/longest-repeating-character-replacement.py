@@ -20,7 +20,7 @@ class Solution:
                 count[s[l]] -= 1
                 l += 1
                 wl -= 1
-                mf = self.mostFreq(count)
+                # mf = self.mostFreq(count)
             
             ans = max(ans, wl)
             r += 1
