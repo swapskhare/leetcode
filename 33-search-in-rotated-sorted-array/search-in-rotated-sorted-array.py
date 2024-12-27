@@ -24,7 +24,4 @@ class Solution:
             return -1
 
         result = binary_search(0, pivot - 1)
-        if result != -1:
-            return result
-        
-        return binary_search(pivot, len(nums) - 1)
+        return result if result != -1  else  binary_search(pivot, len(nums) - 1)
